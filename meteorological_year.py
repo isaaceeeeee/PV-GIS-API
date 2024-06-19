@@ -22,10 +22,6 @@ response = requests.get(base_url, params=params)
 if response.status_code == 200:
     data = response.json()  
     print(json.dumps(data, indent=4))  
-    # df_irradiance = pd.DataFrame(data)  # !! Create a dataframe !!
-    #print(data)
-    #e_y_value = data['outputs']['totals']['fixed']['E_y'] # !! Seperate the kWh per annum !!
-    #print(f"E_y value: {e_y_value}")
 else:
     print(f"Error: {response.status_code} - {response.text}")
 
