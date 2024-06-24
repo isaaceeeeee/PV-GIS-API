@@ -23,5 +23,6 @@ six==1.16.0
 tenacity==8.4.1
 typing_extensions==4.12.2
 urllib3==2.2.2
+vercel==0.2.1
 Werkzeug==3.0.3
 zipp==3.19.2
